@@ -16,6 +16,8 @@ import TodoBackend from "../../images/todo-backend.png";
 import caseiroCasa from "../../images/caseiro-da-casa.png";
 import Portfolio from "../../images/portfolio.png";
 import SugestionBox from "../../images/sugestion-box.png";
+import Drumkit from "../../images/drumkit.png";
+import Imc from "../../images/imc.png";
 
 export function Projects() {
   return (
@@ -64,12 +66,16 @@ export function Projects() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">
-              <CallMadeIcon />
-            </Button>
-            <Button size="small">
-              <GitHubIcon />
-            </Button>
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://github.com/jefersonPMatos/to-do-web"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Button size="small">
+                <GitHubIcon />
+              </Button>
+            </a>
           </CardActions>
         </Card>
         <Card
@@ -107,9 +113,16 @@ export function Projects() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">
-              <GitHubIcon />
-            </Button>
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://github.com/jefersonPMatos/todo-api"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Button size="small">
+                <GitHubIcon />
+              </Button>
+            </a>
           </CardActions>
         </Card>
         <Card
@@ -206,9 +219,16 @@ export function Projects() {
                 <CallMadeIcon />
               </Button>
             </a>
-            <Button size="small">
-              <GitHubIcon />
-            </Button>
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://github.com/jefersonPMatos/shoes-store-web"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Button size="small">
+                <GitHubIcon />
+              </Button>
+            </a>
           </CardActions>
         </Card>
         <Card
@@ -226,7 +246,7 @@ export function Projects() {
           <CardMedia
             component="img"
             height="140"
-            image={ShoesStore}
+            image={Drumkit}
             alt="loja de sapatos"
           />
           <CardContent>
@@ -245,12 +265,26 @@ export function Projects() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">
-              <CallMadeIcon />
-            </Button>
-            <Button size="small">
-              <GitHubIcon />
-            </Button>
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://drumkit-xi.vercel.app/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Button size="small">
+                <CallMadeIcon />
+              </Button>
+            </a>
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://github.com/jefersonPMatos/drumkit"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Button size="small">
+                <GitHubIcon />
+              </Button>
+            </a>
           </CardActions>
         </Card>
         <Card
@@ -268,7 +302,7 @@ export function Projects() {
           <CardMedia
             component="img"
             height="140"
-            image={ShoesStore}
+            image={Imc}
             alt="loja de sapatos"
           />
           <CardContent>
@@ -288,12 +322,26 @@ export function Projects() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">
-              <CallMadeIcon />
-            </Button>
-            <Button size="small">
-              <GitHubIcon />
-            </Button>
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://imc-calculator-phi.vercel.app/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Button size="small">
+                <CallMadeIcon />
+              </Button>
+            </a>
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://github.com/jefersonPMatos/IMC-calculator"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Button size="small">
+                <GitHubIcon />
+              </Button>
+            </a>
           </CardActions>
         </Card>
       </Box>
@@ -333,7 +381,7 @@ export function Projects() {
           <CardActions>
             <a
               style={{ textDecoration: "none" }}
-              href="https://shoes-store-gesr8ur3i-jefersonpmatos.vercel.app/"
+              href="https://portfolio-3hx3lvpej-jefersonpmatos.vercel.app/"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -341,9 +389,16 @@ export function Projects() {
                 <CallMadeIcon />
               </Button>
             </a>
-            <Button size="small">
-              <GitHubIcon />
-            </Button>
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://github.com/jefersonPMatos/portfolio"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Button size="small">
+                <GitHubIcon />
+              </Button>
+            </a>
           </CardActions>
         </Card>
         <Card

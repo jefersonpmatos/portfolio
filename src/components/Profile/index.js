@@ -97,18 +97,10 @@ export function Profile() {
             <Typography variant="h4" fontWeight="bold" color="secondary">
               WEB DEVELOPER JR.
             </Typography>
-            Recém formado pela{" "}
-            <a
-              color="primary"
-              href="https://www.digitalhouse.com/br/produtos/programacao/desenvolvimento-web-full-stack"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Digital House
-            </a>
-            , tenho me aventurado no mundo do desenvolvimento web, indo desde o
-            backend até o frontend, área pela qual me apaixonei. Adoro criar
-            coisas novas, videogames e tecnologia.
+            Recém formado pela Digital House , tenho me aventurado no mundo do
+            desenvolvimento web, indo desde o backend até o frontend, área pela
+            qual me apaixonei. Adoro criar coisas novas, videogames e
+            tecnologia.
           </Typography>
           <Box sx={{ marginTop: "1rem" }}>
             <a
