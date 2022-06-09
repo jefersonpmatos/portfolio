@@ -1,55 +1,95 @@
-import * as React from "react";
-import { Tab, Tabs, Box } from "@mui/material";
-import { TabPanel, TabContext } from "@mui/lab";
-import { Profile } from "../../components/Profile";
-import { Projects } from "../../components/Projects";
-import { Technologies } from "../../components/Technologies";
-import { Contact } from "../../components/Contact";
+import { useState, useEffect } from "react";
+
+import { FaWhatsapp, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
+import { Container, ActionButton } from "./styles";
+
+import Name from "../../components/typing/Name";
+import Profession from "../../components/typing/Profession";
+
+import { Divider } from "../../components/Divider";
+import { Button } from "../../components/Button";
+import { Box } from "../../components/Box";
 
 export function Home() {
-  const [value, setValue] = React.useState("1");
+  const [finishedTimeout, setFinishedTimeout] = useState(false);
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  useEffect(() => {
+    const id = setTimeout(() => {
+      setFinishedTimeout(true);
+    }, 15000);
+
+    return () => clearTimeout(id);
+  }, []);
 
   return (
-    <Box
-      sx={{
-        width: "100%",
-        typography: "body1",
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-      }}
-    >
-      <TabContext value={value}>
-        <Box
-          sx={{
-            borderBottom: 1,
-            borderColor: "divider",
-          }}
-        >
-          <Tabs onChange={handleChange}>
-            <Tab sx={{ color: "#fefefe" }} label="Home" value="1" />
-            <Tab sx={{ color: "#fefefe" }} label="Portfólio" value="2" />
-            <Tab sx={{ color: "#fefefe" }} label="Tecnologias" value="3" />
-            <Tab sx={{ color: "#fefefe" }} label="Contato" value="4" />
-          </Tabs>
-        </Box>
-        <TabPanel value="1">
-          <Profile />
-        </TabPanel>
-        <TabPanel value="2">
-          <Projects />
-        </TabPanel>
-        <TabPanel value="3">
-          <Technologies />
-        </TabPanel>
-        <TabPanel value="4">
-          <Contact />
-        </TabPanel>
-      </TabContext>
-    </Box>
+    <Container>
+      <Box h="100px" />
+      <h1>
+        <Name />
+      </h1>
+
+      <h2>
+        <Profession />
+        {finishedTimeout && (
+          <>
+            <Divider />
+            <Box h="60px" />
+            <span>
+              <ul>
+                <li>
+                  <a
+                    href="mailto:jefersonpmatos@outlook.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <FaEnvelope />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/55083981668392"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <FaWhatsapp />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/jefersonPMatos"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <FaGithub />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/jefersonpmatos/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <FaLinkedin />
+                  </a>
+                </li>
+              </ul>
+            </span>
+            <Box h="30px" />
+            <ActionButton>
+              <Button>
+                <a
+                  href="mailto:jefersonpmatos@outlook.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Entre em contato
+                </a>
+              </Button>
+            </ActionButton>
+          </>
+        )}
+      </h2>
+    </Container>
   );
 }
