@@ -22,6 +22,11 @@ export const Container = styled.div`
     img {
       width: 100px;
     }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
   }
 `;
 

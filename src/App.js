@@ -4,6 +4,7 @@ import { Reset } from "./styles/reset";
 import { Theme } from "./styles/theme";
 
 import { Button } from "./components/Button";
+import { ScrollButton } from "./components/ScrollButton";
 
 import {
   Wrapper,
@@ -87,6 +88,8 @@ export default function App() {
       <Footer>
         <h3>Feito com 💚 por Jeferson P. Matos 🦖🚀</h3>
       </Footer>
+
+      <ScrollButton />
       <Reset />
       <Theme />
     </Wrapper>

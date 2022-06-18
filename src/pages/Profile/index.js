@@ -28,7 +28,15 @@ export function Profile() {
       </h3>
       <Box h="50px" />
       <Span>
-        <Button>Entre em contato</Button>
+        <Button>
+          <a
+            href="mailto:jefersonpmatos@outlook.com"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Entre em contato
+          </a>
+        </Button>
       </Span>
     </Container>
   );
