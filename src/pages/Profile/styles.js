@@ -1,37 +1,39 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 20px;
+  height: 100vh;
+  background: #000;
 
-  h1,
-  h2 {
-    text-align: center;
-    z-index: 50;
-    text-transform: uppercase;
-    text-shadow: 5px 5px 5px rgba(46, 229, 157, 0.4);
-  }
-
-  p {
-    color: #000;
-  }
-
-  span {
-    img {
-      width: 100px;
-    }
-
-    a {
-      text-decoration: none;
-      color: #000;
-    }
+  a {
+    color: #fff;
   }
 `;
 
-export const Span = styled.span`
+export const DivStyled = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const ButtonWrapper = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+`;
+
+export const Text = styled.p`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: justify;
+  max-width: 700px;
 `;

@@ -1,70 +1,92 @@
-import { Container, Card, Title, Details, Techs, Buttons } from "./styles";
+import {
+  Container,
+  ContainerSkills,
+  Card,
+  Details,
+  Techs,
+  Buttons,
+  List,
+  ListItem,
+  Link,
+  CardWrapper,
+} from "./styles";
 
-import { VscFolder, VscGithub, VscLinkExternal } from "react-icons/vsc";
+import { TbBrandGithub, TbExternalLink, TbFolder } from "react-icons/tb";
 
 import { Box } from "../../components/Box";
 import { Divider } from "../../components/Divider";
+import { StarsBackground } from "../../components/StarsBackground";
 
+import { SkillsData } from "./skillsData";
 import { projectsData } from "./projectsData";
 
 export function Projects() {
   return (
-    <Container>
-      <h1>Projetos</h1>
+    <Container id="3">
+      <StarsBackground />
+      <h1>Portfólio</h1>
       <Divider />
       <Box h="50px" />
-      <span>
-        {projectsData.map((project, index) => (
+      <CardWrapper>
+        {projectsData.map(({ site, github, title, details, techs }, index) => (
           <Card key={index}>
             <Buttons>
-              <VscFolder size={40} style={{ color: "#23c483" }} />
-              <Box w="190px" />
-              <button>
-                <a
-                  href={project.site}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <VscLinkExternal size={24} />
-                </a>
-              </button>
-              <button>
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <VscGithub size={24} />
-                </a>
-              </button>
+              <TbFolder size={30} style={{ color: "#e53f22" }} />
+              <Box w="160px" />
+              {site !== "" && (
+                <>
+                  <Link href={site} target="_blank" rel="noreferrer noopener">
+                    <TbExternalLink size={24} />
+                  </Link>
+                </>
+              )}
+              <Link href={github} target="_blank" rel="noreferrer noopener">
+                <TbBrandGithub size={24} />
+              </Link>
             </Buttons>
+            <Box h="10px" />
+            <h3>{title}</h3>
             <Box h="40px" />
-            <Title>
-              <h2>{project.title}</h2>
-            </Title>
-            <Box h="20px" />
             <Details>
-              <p>{project.details} </p>
+              <p>{details} </p>
             </Details>
-            <Box h="140px" />
+            <Box h="20px" />
             <Techs>
-              <h3>{project.techs}</h3>
+              {techs.map((tech, index) => (
+                <img width={24} key={index} src={tech.svg} alt={tech.name} />
+              ))}
             </Techs>
+            <Box h="20px" />
           </Card>
         ))}
-      </span>
-      <Box h="100px" />
-      <h2>
+      </CardWrapper>
+      <Box h="50px" />
+      <h3>
         Você pode encontrar esses e outros projetos no meu
-        <Box w="8px" />
-        <a
+        {"  "}
+        <Link
+          cl="#22c8e5"
+          clh="#e53f22"
           href="https://github.com/jefersonPMatos"
           target="_blank"
           rel="noreferrer noopener"
         >
           GitHub.
-        </a>
-      </h2>
+        </Link>
+      </h3>
+      <Box h="50px" />
+      <ContainerSkills>
+        <div>
+          <List>
+            {SkillsData.map((skill, index) => (
+              <ListItem key={index}>
+                <img height={40} width={40} src={skill.svg} alt={skill.name} />
+                <p>{skill.name}</p>
+              </ListItem>
+            ))}
+          </List>
+        </div>
+      </ContainerSkills>
     </Container>
   );
 }

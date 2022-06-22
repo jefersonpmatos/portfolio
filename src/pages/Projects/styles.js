@@ -1,121 +1,97 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  span {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    padding: 1rem;
-  }
+export const Container = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150vh;
+  background: #000;
+`;
 
-  h1,
-  h2 {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    text-shadow: 5px 5px 5px rgba(46, 229, 157, 0.4);
-  }
+export const DivStyled = styled.div`
+  gap: 15px;
+  padding: 1rem;
+`;
 
-  h2 {
-    font-size: 18px;
-    a {
-      color: #23c483;
-
-      &:hover {
-        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-      }
-    }
-  }
+export const CardWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1200px;
 `;
 
 export const Card = styled.div`
-  display: flex;
-  align-items: left;
-  flex-direction: column;
   width: 250px;
   height: 250px;
   border-radius: 4px;
   padding: 1rem;
   background: transparent;
-  border: #000 1px solid;
+  border: #fff 1px solid;
   transition: all 0.3s ease-in-out;
+  position: relative;
 
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 10px 15px rgba(46, 229, 157, 0.4);
+    box-shadow: 0px 10px 15px rgba(34, 200, 229, 0.4);
   }
-
-  button {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-  }
-
-  span {
-    display: flex;
-    justify-content: space-evenly;
-    min-height: 20px;
-
-    a {
-      text-decoration: none;
-      color: #000;
-
-      &:hover {
-        color: #23c483;
-      }
-    }
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  h3 {
-    display: flex;
-    align-self: bottom;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
-    color: #3b3c54;
-  }
-
-  button {
-    cursor: pointer;
-    text-decoration: none;
-  }
-`;
-
-export const Techs = styled.div`
-  display: flex;
-  min-height: 20px;
-`;
-export const Title = styled.div`
-  display: flex;
-  text-align: left;
-  min-height: 20px;
-`;
-export const Details = styled.div`
-  display: flex;
-  min-height: 40px;
 `;
 export const Buttons = styled.div`
   display: flex;
   min-height: 40px;
+  gap: 1rem;
+`;
 
-  a {
-    text-decoration: none;
-    color: #000;
+export const Details = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+`;
 
-    &:hover {
-      color: #23c483;
-    }
+export const Techs = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  margin-bottom: 10px;
+  bottom: 0;
+`;
+
+export const Link = styled.a`
+  text-decoration: none;
+  color: ${(props) => props.cl || "#fff"};
+
+  &:hover {
+    color: ${(props) => props.clh || "#22c8e5"};
+  }
+`;
+
+export const ContainerSkills = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const List = styled.ul`
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+`;
+
+export const ListItem = styled.li`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  gap: 5px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: transparent;
+    transform: translateY(-8px);
   }
 `;

@@ -9,5 +9,10 @@ export const Button = styled.div`
   font-size: 3rem;
   z-index: 1;
   cursor: pointer;
-  color: #23c483;
+  color: #22c8e5;
+  transition: 0.3s all ease;
+
+  &:hover {
+    color: #91e4f2;
+  }
 `;

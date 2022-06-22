@@ -1,3 +1,7 @@
+import Express from "../../images/express.svg";
+import Github from "../../images/github.svg";
+import Styled from "../../images/styled.svg";
+
 export const SkillsData = [
   {
     svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
@@ -6,6 +10,10 @@ export const SkillsData = [
   {
     svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     name: "React",
+  },
+  {
+    svg: Styled,
+    name: "Styled",
   },
   {
     svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
@@ -20,7 +28,7 @@ export const SkillsData = [
     name: "NodeJs",
   },
   {
-    svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    svg: Express,
     name: "Express",
   },
   {
@@ -28,7 +36,7 @@ export const SkillsData = [
     name: "Git",
   },
   {
-    svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    svg: Github,
     name: "GitHub",
   },
   {

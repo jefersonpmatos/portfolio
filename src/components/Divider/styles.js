@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import { keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const fadeIn = keyframes`
   0% { width: 0}
@@ -9,8 +8,8 @@ export const fadeIn = keyframes`
 export const Line = styled.hr`
   display: flex;
   position: relative;
-  border: 1px solid #23c483;
-  background: #23c483;
-  max-width: 300px;
+  border: 1px solid;
+  background: #22c8e5;
+  max-width: 500px;
   animation: ${fadeIn} 5s ease;
 `;

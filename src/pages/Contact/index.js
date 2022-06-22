@@ -1,14 +1,19 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
-// import withReactContent from "sweetalert2-react-content";
+
+import {
+  Container,
+  ContactForm,
+  InputLabel,
+  InputStyled,
+  TextAreaStyled,
+} from "./styles";
 
 import { Box } from "../../components/Box";
 import { Divider } from "../../components/Divider";
 import { Button } from "../../components/Button";
-import { Wrapper, Container } from "./styles";
-
-// const MySwal = withReactContent(Swal);
+import { StarsBackground } from "../../components/StarsBackground";
 
 export function Contact() {
   const form = useRef();
@@ -24,7 +29,7 @@ export function Contact() {
         "TzdwkSpAs9yA6zfbd"
       )
       .then(
-        (result) => {
+        (res) => {
           Swal.fire({
             title: "Email enviado com sucesso!",
             icon: "success",
@@ -37,48 +42,48 @@ export function Contact() {
   };
 
   return (
-    <Wrapper>
+    <Container id="4">
+      <Box h="100px" />
+      <StarsBackground />
       <h1>Entre em contato</h1>
       <Divider />
       <Box h="50px" />
-      <Container>
-        <form ref={form} onSubmit={sendEmail}>
-          <span>
-            <label>
-              <h3>Seu nome</h3>
-              <input
-                type="text"
-                placeholder="Informe seu nome"
-                name="user_name"
-              />
-            </label>
-            <Box h="15px" />
-            <label>
-              <h3>Seu email</h3>
-              <input
-                type="email"
-                placeholder="Informe seu email"
-                name="user_email"
-              />
-            </label>
-            <Box h="15px" />
-            <label>
-              <h3>Mensagem</h3>
-              <input
-                type="text"
-                placeholder="Deixe sua mensagem"
-                name="message"
-              />
-            </label>
-            <Box h="25px" />
-            <div>
-              <Button>Enviar</Button>
-            </div>
-          </span>
-        </form>
-      </Container>
-    </Wrapper>
+      <ContactForm ref={form} onSubmit={sendEmail}>
+        <InputLabel>
+          <h3>Seu nome</h3>
+          <Box h="10px" />
+          <InputStyled
+            type="text"
+            placeholder="Informe seu nome"
+            name="user_name"
+          />
+        </InputLabel>
+        <Box h="15px" />
+
+        <InputLabel>
+          <h3>Seu email</h3>
+          <Box h="10px" />
+          <InputStyled
+            type="email"
+            placeholder="Informe seu email"
+            name="user_email"
+          />
+        </InputLabel>
+        <Box h="15px" />
+
+        <InputLabel>
+          <h3>Mensagem</h3>
+          <Box h="10px" />
+          <TextAreaStyled
+            type="text"
+            placeholder="Deixe sua mensagem"
+            name="message"
+          />
+        </InputLabel>
+        <Box h="25px" />
+
+        <Button>Enviar</Button>
+      </ContactForm>
+    </Container>
   );
 }
-
-// box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);

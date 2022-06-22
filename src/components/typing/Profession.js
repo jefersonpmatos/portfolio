@@ -28,7 +28,7 @@ export default function Name() {
               .pause(750)
               .delete()
               .pause(600)
-              .type("Desenvolvedor frontend Jr")
+              .type("Desenvolvedor frontend")
               .pause(500)
               .type(".");
             return instance;
