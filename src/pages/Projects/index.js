@@ -15,9 +15,9 @@ import { TbBrandGithub, TbExternalLink, TbFolder } from "react-icons/tb";
 
 import { Box } from "../../components/Box";
 import { Divider } from "../../components/Divider";
-import { StarsBackground } from "../../components/StarsBackground";
+// import { StarsBackground } from "../../components/StarsBackground";
 
-import { SkillsData } from "./skillsData";
+// import { SkillsData } from "./skillsData";
 import { projectsData } from "./projectsData";
 
 export function Projects() {
@@ -75,7 +75,7 @@ export function Projects() {
         </Link>
       </h3>
       <Box h="50px" />
-      <ContainerSkills>
+      {/* <ContainerSkills>
         <div>
           <List>
             {SkillsData.map((skill, index) => (
@@ -86,7 +86,7 @@ export function Projects() {
             ))}
           </List>
         </div>
-      </ContainerSkills>
+      </ContainerSkills> */}
     </Container>
   );
 }

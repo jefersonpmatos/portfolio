@@ -43,3 +43,29 @@ export const Text = styled.p`
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 `;
+
+export const ContainerSkills = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const List = styled.ul`
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+`;
+
+export const ListItem = styled.li`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  gap: 5px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: transparent;
+    transform: translateY(-8px);
+  }
+`;
