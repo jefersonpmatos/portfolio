@@ -8,7 +8,7 @@ export const fadeIn = keyframes`
 export const Line = styled.hr`
   display: flex;
   position: relative;
-  border: 1px solid;
+  border: 1px solid #22c8e5;
   background: #22c8e5;
   max-width: 500px;
   animation: ${fadeIn} 5s ease;

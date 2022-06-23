@@ -2,9 +2,8 @@ import { useState, useEffect } from "react";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-import { Container, List, ActionButton, LinkStyled } from "./styles";
+import { Container, List, ActionButton, LinkStyled, Name } from "./styles";
 
-import Name from "../../components/typing/Name";
 import Profession from "../../components/typing/Profession";
 
 import { Divider } from "../../components/Divider";
@@ -18,7 +17,7 @@ export function Home() {
   useEffect(() => {
     const id = setTimeout(() => {
       setFinishedTimeout(true);
-    }, 15000);
+    }, 5000);
 
     return () => clearTimeout(id);
   }, []);
@@ -26,18 +25,17 @@ export function Home() {
   return (
     <Container id="1">
       <StarsBackground />
-      <div id="title"></div>
-      <Box h="300px" />
-      <h1>
-        <Name />
-      </h1>
+      <Box h="200px" />
+      <Name>Jeferson P. Matos</Name>
+      <Box h="20px" />
       <h2>
         <Profession />
       </h2>
+      <Box h="10px" />
       {finishedTimeout && (
         <>
           <Divider />
-          <Box h="80px" />
+          <Box h="50px" />
           <List>
             <li>
               <LinkStyled

@@ -36,4 +36,10 @@ export const Text = styled.p`
   padding: 1rem;
   text-align: justify;
   max-width: 700px;
+
+  background: #000;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 `;
