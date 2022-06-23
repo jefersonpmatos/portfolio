@@ -1,12 +1,9 @@
 import {
   Container,
-  ContainerSkills,
   Card,
   Details,
   Techs,
   Buttons,
-  List,
-  ListItem,
   Link,
   CardWrapper,
 } from "./styles";
@@ -15,15 +12,12 @@ import { TbBrandGithub, TbExternalLink, TbFolder } from "react-icons/tb";
 
 import { Box } from "../../components/Box";
 import { Divider } from "../../components/Divider";
-// import { StarsBackground } from "../../components/StarsBackground";
 
-// import { SkillsData } from "./skillsData";
 import { projectsData } from "./projectsData";
 
 export function Projects() {
   return (
     <Container id="3">
-      {/* <StarsBackground /> */}
       <h1>Portfólio</h1>
       <Divider />
       <Box h="50px" />

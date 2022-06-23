@@ -1,19 +1,29 @@
-import { useRef } from "react";
-
-import { Container } from "./styles";
+import { Container, ContactButtons, Link, Icon } from "./styles";
 
 import { Box } from "../../components/Box";
 import { Divider } from "../../components/Divider";
-import { Button } from "../../components/Button";
+
+import { contactData } from "./contactData";
 
 export function Contact() {
   return (
     <Container id="4">
       <Box h="100px" />
-      {/* <StarsBackground /> */}
       <h1>Contato</h1>
       <Divider />
-      <Box h="50px" />
+      <Box h="100px" />
+      <ContactButtons>
+        {contactData.map((contact, index) => (
+          <Link
+            key={index}
+            href={contact.link}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <Icon src={contact.icon} width="50" alt={contact.name} />
+          </Link>
+        ))}
+      </ContactButtons>
     </Container>
   );
 }
