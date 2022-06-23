@@ -44,7 +44,7 @@ export function Contact() {
   return (
     <Container id="4">
       <Box h="100px" />
-      <StarsBackground />
+      {/* <StarsBackground /> */}
       <h1>Entre em contato</h1>
       <Divider />
       <Box h="50px" />

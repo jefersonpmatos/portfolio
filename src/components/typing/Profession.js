@@ -18,7 +18,6 @@ export default function Name() {
       {finishedTimeout && (
         <TypeIt
           options={{
-            speed: 100,
             waitUntilVisible: false,
             lifeLike: true,
           }}

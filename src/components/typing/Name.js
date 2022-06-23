@@ -4,7 +4,6 @@ export default function Name() {
   return (
     <TypeIt
       options={{
-        speed: 100,
         waitUntilVisible: false,
         lifeLike: true,
         afterComplete: function (instance) {

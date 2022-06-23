@@ -23,7 +23,7 @@ import { projectsData } from "./projectsData";
 export function Projects() {
   return (
     <Container id="3">
-      <StarsBackground />
+      {/* <StarsBackground /> */}
       <h1>Portfólio</h1>
       <Divider />
       <Box h="50px" />
