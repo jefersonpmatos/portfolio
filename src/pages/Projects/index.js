@@ -1,14 +1,16 @@
 import {
   Container,
-  Card,
   Details,
   Techs,
   Buttons,
   Link,
-  CardWrapper,
+  CardContainer,
+  Gif,
+  CardText,
+  Card,
 } from "./styles";
 
-import { TbBrandGithub, TbExternalLink, TbFolder } from "react-icons/tb";
+import { TbBrandGithub, TbExternalLink } from "react-icons/tb";
 
 import { Box } from "../../components/Box";
 import { Divider } from "../../components/Divider";
@@ -21,40 +23,48 @@ export function Projects() {
       <h1>Portfólio</h1>
       <Divider />
       <Box h="50px" />
-      <CardWrapper>
-        {projectsData.map(({ site, github, title, details, techs }, index) => (
-          <Card key={index}>
-            <Buttons>
-              <TbFolder size={30} style={{ color: "#e53f22" }} />
-              <Box w="160px" />
-              {site !== "" && (
-                <>
-                  <Link href={site} target="_blank" rel="noreferrer noopener">
-                    <TbExternalLink size={24} />
+      <CardContainer>
+        {projectsData.map(
+          ({ site, github, title, details, techs, img, reverse }, index) => (
+            <Card reverse={reverse} key={index}>
+              <Gif width={500} src={img} alt={title} />
+              <CardText>
+                <h3>{title}</h3>
+                <Details>
+                  <p>{details} </p>
+                </Details>
+                <Buttons>
+                  {site !== "" && (
+                    <>
+                      <Link
+                        href={site}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <TbExternalLink size={40} />
+                      </Link>
+                    </>
+                  )}
+                  <Link href={github} target="_blank" rel="noreferrer noopener">
+                    <TbBrandGithub size={40} />
                   </Link>
-                </>
-              )}
-              <Link href={github} target="_blank" rel="noreferrer noopener">
-                <TbBrandGithub size={24} />
-              </Link>
-            </Buttons>
-            <Box h="10px" />
-            <h3>{title}</h3>
-            <Box h="40px" />
-            <Details>
-              <p>{details} </p>
-            </Details>
-            <Box h="20px" />
-            <Techs>
-              {techs.map((tech, index) => (
-                <img width={24} key={index} src={tech.svg} alt={tech.name} />
-              ))}
-            </Techs>
-            <Box h="20px" />
-          </Card>
-        ))}
-      </CardWrapper>
-      <Box h="50px" />
+                </Buttons>
+                <Techs>
+                  {techs.map((tech, index) => (
+                    <img
+                      width={24}
+                      key={index}
+                      src={tech.svg}
+                      alt={tech.name}
+                    />
+                  ))}
+                </Techs>
+              </CardText>
+            </Card>
+          )
+        )}
+      </CardContainer>
+      <Box h="100px" />
       <h3>
         Você pode encontrar esses e outros projetos no meu
         {"  "}
@@ -68,19 +78,6 @@ export function Projects() {
           GitHub.
         </Link>
       </h3>
-      <Box h="50px" />
-      {/* <ContainerSkills>
-        <div>
-          <List>
-            {SkillsData.map((skill, index) => (
-              <ListItem key={index}>
-                <img height={40} width={40} src={skill.svg} alt={skill.name} />
-                <p>{skill.name}</p>
-              </ListItem>
-            ))}
-          </List>
-        </div>
-      </ContainerSkills> */}
     </Container>
   );
 }

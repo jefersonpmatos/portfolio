@@ -4,17 +4,27 @@ import Html from "../../images/html.svg";
 import Node from "../../images/node.svg";
 import Ts from "../../images/ts.svg";
 import React from "../../images/react.svg";
-import Postgre from "../../images/postgre.svg";
+// import Postgre from "../../images/postgre.svg";
 import Express from "../../images/express.svg";
 import Mariadb from "../../images/mariadb.svg";
 import Tailwind from "../../images/tailwind.svg";
 import Styled from "../../images/styled.svg";
 import Ejs from "../../images/ejs.svg";
 
+import todo from "../../gifs/todo.gif";
+import imc from "../../gifs/imc.gif";
+import parallax from "../../gifs/parallax.gif";
+import portfolio from "../../gifs/portfolio.gif";
+import shoes from "../../gifs/shoes.gif";
+import caseiro from "../../gifs/caseiro.gif";
+
 export const projectsData = [
   {
-    title: "To do! [Frontend]",
-    details: "Aplicação de gerenciamento de tarefas.",
+    title: "To do!",
+    img: todo,
+    reverse: false,
+    details:
+      "Aplicação de gerenciamento de tarefas com front e backend seperados.",
     site: "",
     github: "https://github.com/jefersonPMatos/to-do-web",
     techs: [
@@ -33,32 +43,9 @@ export const projectsData = [
     ],
   },
   {
-    title: " To do! [Backend]",
-    details:
-      "Backend da aplicação de gerenciamento de tarefas. Cadastro, login, autenticação JWT, e registro em banco de dados relacional.",
-    site: "",
-    github: "https://github.com/jefersonPMatos/todo-api",
-    techs: [
-      {
-        name: "javascript",
-        svg: Js,
-      },
-      {
-        name: "NodeJs",
-        svg: Node,
-      },
-      {
-        name: "PostgreSQL",
-        svg: Postgre,
-      },
-      {
-        name: "Express",
-        svg: Express,
-      },
-    ],
-  },
-  {
     title: "Caseiro da Casa",
+    img: caseiro,
+    reverse: true,
     details:
       "Projeto integrador da Digital House. Site de receitas. Monolíto onde usuário cadastra e encontra receitas com base nos ingredientes",
     site: "",
@@ -96,6 +83,8 @@ export const projectsData = [
   },
   {
     title: "Loja de sapatos",
+    img: shoes,
+    reverse: false,
     details:
       "Loja de sapatos com base em projeto do meu professor, onde incrementei algumas funções, inclusive Backend.",
     site: "https://shoes-store-gesr8ur3i-jefersonpmatos.vercel.app/",
@@ -116,28 +105,9 @@ export const projectsData = [
     ],
   },
   {
-    title: "Drum Kit",
-    details:
-      "Uma bateria construída em vanila JS com o intuito de por em prática conceitos sobre JS no frontend.",
-    site: "https://drumkit-xi.vercel.app/",
-    github: "https://github.com/jefersonPMatos/drumkit",
-    techs: [
-      {
-        name: "Javascript",
-        svg: Js,
-      },
-      {
-        name: "HTML",
-        svg: Html,
-      },
-      {
-        name: "CSS",
-        svg: Css,
-      },
-    ],
-  },
-  {
     title: "Calculadora IMC",
+    img: imc,
+    reverse: true,
     details: "Calculadora de IMC com mensagens personalizadas",
     site: "https://imc-calculator-phi.vercel.app/",
     github: "https://github.com/jefersonPMatos/IMC-calculator",
@@ -158,45 +128,37 @@ export const projectsData = [
   },
   {
     title: "Portfólio",
-    details: "Meu portfólio onde aplico tudo que aprendi com ReactJS.",
-    site: "https://portfolio-3hx3lvpej-jefersonpmatos.vercel.app/",
-    github: "https://github.com/jefersonPMatos/portfolio",
+    img: portfolio,
+    reverse: false,
+    details: "Portfólio feito para praticar uso de CSS",
+    site: "",
+    github: "https://github.com/jefersonPMatos/TQI-Fullstack-Developer",
     techs: [
       {
-        name: "javascript",
-        svg: Js,
+        name: "HTML",
+        svg: Html,
       },
       {
-        name: "react",
-        svg: React,
-      },
-      {
-        name: "styledcomponents",
-        svg: Styled,
+        name: "CSS",
+        svg: Css,
       },
     ],
   },
   {
-    title: "Caixa de sugestão",
-    details: "Projeto resultante do NLW Return da Rockteseat",
-    site: "https://sugestion-box-git-master-jefersonpmatos.vercel.app/",
-    github: "https://github.com/jefersonPMatos/sugestion-box",
+    title: "Parallax",
+    img: parallax,
+    reverse: true,
+    details: "Estudo de parallax e prática de CSS",
+    site: "",
+    github: "https://github.com/jefersonPMatos/TQI-Fullstack-Developer",
     techs: [
       {
-        name: "javascript",
-        svg: Js,
+        name: "HTML",
+        svg: Html,
       },
       {
-        name: "typescript",
-        svg: Ts,
-      },
-      {
-        name: "react",
-        svg: React,
-      },
-      {
-        name: "tailwind",
-        svg: Tailwind,
+        name: "CSS",
+        svg: Css,
       },
     ],
   },

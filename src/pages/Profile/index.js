@@ -32,7 +32,7 @@ export function Profile() {
           <List>
             {SkillsData.map((skill, index) => (
               <ListItem key={index}>
-                <img height={40} width={40} src={skill.svg} alt={skill.name} />
+                <img width={20} src={skill.svg} alt={skill.name} />
                 <p>{skill.name}</p>
               </ListItem>
             ))}
