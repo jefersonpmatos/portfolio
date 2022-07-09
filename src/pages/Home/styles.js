@@ -6,7 +6,6 @@ export const fadeIn = keyframes`
 `;
 
 export const Container = styled.section`
-  background: #000;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
@@ -26,20 +25,10 @@ export const List = styled.ul`
 
 export const LinkStyled = styled.a`
   color: #fff;
-
-  &:hover {
-    color: #22c8e5;
-  }
 `;
 
 export const ActionButton = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  a {
-    &:hover {
-      color: #fff;
-    }
-  }
 `;

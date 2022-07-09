@@ -19,7 +19,9 @@ export default function App() {
       <Projects />
       <Contact />
       <Footer />
+
       <ScrollButton />
+
       <Reset />
       <Theme />
     </>

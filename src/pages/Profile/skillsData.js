@@ -1,50 +1,65 @@
+import Js from "../../images/js.svg";
+import Css from "../../images/css.svg";
+import Html from "../../images/html.svg";
+import Node from "../../images/node.svg";
+import React from "../../images/react.svg";
 import Express from "../../images/express.svg";
-import Github from "../../images/github.svg";
+import Mariadb from "../../images/mariadb.svg";
+import Postgre from "../../images/postgre.svg";
 import Styled from "../../images/styled.svg";
+import Ejs from "../../images/ejs.svg";
+import Git from "../../images/git.svg";
+import Vue from "../../images/vue.svg";
 
 export const SkillsData = [
   {
-    svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    svg: Js,
     name: "Javascript",
   },
   {
-    svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    svg: React,
     name: "React",
+  },
+  {
+    svg: Vue,
+    name: "Vue",
+  },
+  {
+    svg: Html,
+    name: "HTML",
+  },
+  {
+    svg: Css,
+    name: "CSS",
+  },
+
+  {
+    svg: Node,
+    name: "NodeJs",
   },
   {
     svg: Styled,
     name: "Styled",
   },
   {
-    svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    name: "HTML",
-  },
-  {
-    svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-    name: "CSS",
-  },
-  {
-    svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    name: "NodeJs",
-  },
-  {
     svg: Express,
     name: "Express",
   },
   {
-    svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    svg: Git,
     name: "Git",
   },
+
   {
-    svg: Github,
-    name: "GitHub",
-  },
-  {
-    svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    svg: Postgre,
     name: "PostgreSQL",
   },
   {
-    svg: "https://www.svgrepo.com/show/373574/ejs.svg",
+    svg: Mariadb,
+    name: "MariaDB",
+  },
+  {
+    svg: Ejs,
     name: "EJS",
   },
 ];

@@ -2,12 +2,9 @@ import Js from "../../images/js.svg";
 import Css from "../../images/css.svg";
 import Html from "../../images/html.svg";
 import Node from "../../images/node.svg";
-import Ts from "../../images/ts.svg";
 import React from "../../images/react.svg";
-// import Postgre from "../../images/postgre.svg";
 import Express from "../../images/express.svg";
 import Mariadb from "../../images/mariadb.svg";
-import Tailwind from "../../images/tailwind.svg";
 import Styled from "../../images/styled.svg";
 import Ejs from "../../images/ejs.svg";
 

@@ -35,7 +35,7 @@ export function Home() {
       {finishedTimeout && (
         <>
           <Divider />
-          <Box h="50px" />
+          <Box h="20px" />
           <List>
             <li>
               <LinkStyled
@@ -63,9 +63,8 @@ export function Home() {
                 href="mailto:jefersonpmatos@outlook.com"
                 target="_blank"
                 rel="noreferrer noopener"
-              >
-                Entre em contato
-              </LinkStyled>
+              />
+              Entre em contato
             </Button>
           </ActionButton>
         </>

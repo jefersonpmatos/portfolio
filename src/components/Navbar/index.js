@@ -44,7 +44,7 @@ export function Navbar() {
       <Nav
         style={{
           backgroundColor: visible ? "#000" : "transparent",
-          border: visible ? "1px solid #fff" : "none",
+          borderBottom: visible ? "1px solid #fff" : "none",
         }}
       >
         <List>
