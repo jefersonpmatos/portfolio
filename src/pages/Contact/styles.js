@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 70vh;
-  background-color: #000;
 `;
 
 export const ContactButtons = styled.div`

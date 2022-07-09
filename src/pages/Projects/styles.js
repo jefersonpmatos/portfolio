@@ -6,7 +6,6 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   height: 300vh;
-  background: #000;
 `;
 
 export const CardContainer = styled.div`
