@@ -1,10 +1,9 @@
+import TypeIt from "typeit-react";
 import { useState, useEffect } from "react";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { Container, List, ActionButton, LinkStyled, Name } from "./styles";
-
-import Profession from "../../components/typing/Profession";
 
 import { Divider } from "../../components/Divider";
 import { Button } from "../../components/Button";
@@ -29,7 +28,7 @@ export function Home() {
       <Name>Jeferson P. Matos</Name>
       <Box h="20px" />
       <h2>
-        <Profession />
+        <TypeIt>Desenvolvedor Web FullStack</TypeIt>
       </h2>
       <Box h="10px" />
       {finishedTimeout && (
