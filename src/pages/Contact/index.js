@@ -24,6 +24,7 @@ export function Contact() {
           </Link>
         ))}
       </ContactButtons>
+      <Box h="100px" />
     </Container>
   );
 }

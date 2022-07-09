@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  height: 70vh;
-`;
+export const Container = styled.div``;
 
 export const ContactButtons = styled.div`
   display: flex;
