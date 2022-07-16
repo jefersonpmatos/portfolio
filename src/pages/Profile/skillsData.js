@@ -20,10 +20,10 @@ export const SkillsData = [
     svg: React,
     name: "React",
   },
-  {
-    svg: Vue,
-    name: "Vue",
-  },
+  // {
+  //   svg: Vue,
+  //   name: "Vue",
+  // },
   {
     svg: Html,
     name: "HTML",
