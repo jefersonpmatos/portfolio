@@ -14,6 +14,10 @@ export const Nav = styled.nav`
   transition: all 0.3s ease;
   padding: 5px;
   width: 100%;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const List = styled.ul`

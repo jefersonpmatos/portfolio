@@ -10,6 +10,6 @@ export const Line = styled.hr`
   position: relative;
   border: 1px solid #22c8e5;
   background: #22c8e5;
-  max-width: 500px;
+  max-width: 50vw;
   animation: ${fadeIn} 5s ease;
 `;

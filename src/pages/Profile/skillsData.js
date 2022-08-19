@@ -9,7 +9,8 @@ import Postgre from "../../images/postgre.svg";
 import Styled from "../../images/styled.svg";
 import Ejs from "../../images/ejs.svg";
 import Git from "../../images/git.svg";
-import Vue from "../../images/vue.svg";
+import Firebase from "../../images/firebase.svg";
+import Mysql from "../../images/mysql.svg";
 
 export const SkillsData = [
   {
@@ -20,10 +21,6 @@ export const SkillsData = [
     svg: React,
     name: "React",
   },
-  // {
-  //   svg: Vue,
-  //   name: "Vue",
-  // },
   {
     svg: Html,
     name: "HTML",
@@ -57,6 +54,14 @@ export const SkillsData = [
   {
     svg: Mariadb,
     name: "MariaDB",
+  },
+  {
+    svg: Firebase,
+    name: "Firebase",
+  },
+  {
+    svg: Mysql,
+    name: "MySQL",
   },
   {
     svg: Ejs,

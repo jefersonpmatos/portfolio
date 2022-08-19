@@ -9,6 +9,7 @@ import { Divider } from "../../components/Divider";
 import { Button } from "../../components/Button";
 import { Box } from "../../components/Box";
 import { StarsBackground } from "../../components/StarsBackground";
+import Curriculum from "../../docs/cv-jefersonpmatos.pdf";
 
 export function Home() {
   const [finishedTimeout, setFinishedTimeout] = useState(false);
@@ -24,9 +25,7 @@ export function Home() {
   return (
     <Container id="1">
       <StarsBackground />
-      <Box h="200px" />
       <Name>Jeferson P. Matos</Name>
-      <Box h="20px" />
       <h2>
         <TypeIt>Desenvolvedor Web FullStack</TypeIt>
       </h2>
@@ -57,14 +56,11 @@ export function Home() {
           </List>
           <Box h="20px" />
           <ActionButton>
-            <Button>
-              <LinkStyled
-                href="mailto:jefersonpmatos@outlook.com"
-                target="_blank"
-                rel="noreferrer noopener"
-              />
-              Entre em contato
-            </Button>
+            <a href={Curriculum} target="_blank" rel="noreferrer noopener">
+              <Button>
+                <span>Currículo</span>
+              </Button>
+            </a>
           </ActionButton>
         </>
       )}

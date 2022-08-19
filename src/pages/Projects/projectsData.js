@@ -7,6 +7,7 @@ import Express from "../../images/express.svg";
 import Mariadb from "../../images/mariadb.svg";
 import Styled from "../../images/styled.svg";
 import Ejs from "../../images/ejs.svg";
+import Firebase from "../../images/firebase.svg";
 
 import todo from "../../gifs/todo.gif";
 import imc from "../../gifs/imc.gif";
@@ -14,31 +15,9 @@ import parallax from "../../gifs/parallax.gif";
 import portfolio from "../../gifs/portfolio.gif";
 import shoes from "../../gifs/shoes.gif";
 import caseiro from "../../gifs/caseiro.gif";
+import multistep from "../../gifs/multistep.gif";
 
 export const projectsData = [
-  {
-    title: "To do!",
-    img: todo,
-    reverse: false,
-    details:
-      "Aplicação de gerenciamento de tarefas com front e backend seperados.",
-    site: "",
-    github: "https://github.com/jefersonPMatos/to-do-web",
-    techs: [
-      {
-        name: "javascript",
-        svg: Js,
-      },
-      {
-        name: "react",
-        svg: React,
-      },
-      {
-        name: "styledcomponents",
-        svg: Styled,
-      },
-    ],
-  },
   {
     title: "Caseiro da Casa",
     img: caseiro,
@@ -93,6 +72,71 @@ export const projectsData = [
       },
       {
         name: "React",
+        svg: React,
+      },
+      {
+        name: "styledcomponents",
+        svg: Styled,
+      },
+      {
+        name: "NodeJs",
+        svg: Node,
+      },
+      {
+        name: "Express",
+        svg: Express,
+      },
+    ],
+  },
+  {
+    title: "Form multi-step",
+    img: multistep,
+    reverse: true,
+    details: "Formulário multi-step. Frontend e Backend.",
+    site: "https://form-multistep-frontend.herokuapp.com/",
+    github: "https://github.com/jefersonPMatos/form-multistep-frontend",
+    techs: [
+      {
+        name: "javascript",
+        svg: Js,
+      },
+      {
+        name: "react",
+        svg: React,
+      },
+      {
+        name: "styledcomponents",
+        svg: Styled,
+      },
+      {
+        name: "NodeJs",
+        svg: Node,
+      },
+      {
+        name: "Express",
+        svg: Express,
+      },
+      {
+        name: "Firebase",
+        svg: Firebase,
+      },
+    ],
+  },
+  {
+    title: "To do!",
+    img: todo,
+    reverse: false,
+    details:
+      "Aplicação de gerenciamento de tarefas com front e backend seperados.",
+    site: "",
+    github: "https://github.com/jefersonPMatos/to-do-web",
+    techs: [
+      {
+        name: "javascript",
+        svg: Js,
+      },
+      {
+        name: "react",
         svg: React,
       },
       {

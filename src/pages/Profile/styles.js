@@ -4,12 +4,12 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-`;
+  padding-top: 10vh;
 
-export const DivStyled = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media (max-width: 600px) {
+    padding-top: 0;
+    height: 100vh;
+  }
 `;
 
 export const Text = styled.h3`
@@ -18,17 +18,26 @@ export const Text = styled.h3`
   align-items: center;
   flex-direction: column;
   color: #fff;
-  font-size: 30px;
+  font-size: 2vw;
   text-shadow: 2px 2px 2px rgba(229, 63, 34, 0.4);
-  max-width: 900px;
-  min-height: 350px;
+  max-width: 90vw;
+  min-height: 200px;
+  border: 1px solid #fff;
+  background-color: #000;
+  z-index: 88;
+  margin-top: 20px;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const ContainerSkills = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 800px;
+  max-width: 70vw;
+  padding-top: 4vh;
 `;
 
 export const List = styled.ul`
@@ -37,6 +46,12 @@ export const List = styled.ul`
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    width: 200px;
+    height: auto;
+  }
 `;
 
 export const ListItem = styled.li`
@@ -54,11 +69,11 @@ export const ListItem = styled.li`
   }
 
   img {
-    filter: drop-shadow(4px 4px 1px rgba(34, 200, 229, 0.4));
-    transition: 0.2s;
-
-    &:hover {
-      filter: drop-shadow(6px 6px 1px rgba(34, 200, 229, 0.4));
+    width: 100px;
+    @media (max-width: 600px) {
+      width: 50px;
     }
+
+    filter: drop-shadow(4px 4px 1px rgba(34, 200, 229, 0.4));
   }
 `;

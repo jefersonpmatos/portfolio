@@ -11,6 +11,7 @@ const animStars = keyframes`
 
 export const Stars1 = styled.div`
   width: 1px;
+  max-width: 100vw;
   height: 1px;
   background: transparent;
   animation: ${animStars} 50s linear infinite;
@@ -197,6 +198,7 @@ export const Stars1 = styled.div`
     position: absolute;
     top: 2000px;
     width: 1px;
+    max-width: 100vw;
     height: 1px;
     background: transparent;
     box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
@@ -395,6 +397,7 @@ export const Stars1 = styled.div`
 
 export const Stars2 = styled.div`
   width: 2px;
+  max-width: 100vw;
   height: 2px;
   background: transparent;
   animation: ${animStars} 100s linear infinite;
@@ -455,6 +458,7 @@ export const Stars2 = styled.div`
     position: absolute;
     top: 2000px;
     width: 2px;
+    max-width: 100vw;
     height: 2px;
     background: transparent;
     box-shadow: 1448px 320px #fff, 1775px 1663px #fff, 332px 1364px #fff,

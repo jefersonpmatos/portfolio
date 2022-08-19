@@ -5,6 +5,11 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 20vh;
+
+  @media (max-width: 600px) {
+    margin-top: 0;
+  }
 `;
 
 export const CardContainer = styled.div`
@@ -24,6 +29,13 @@ export const Card = styled.div`
         max-width: 900px;
         padding: 1rem;
         z-index: 50;
+
+        @media (max-width: 600px) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
       `;
     } else {
       return css`
@@ -33,6 +45,14 @@ export const Card = styled.div`
         max-width: 900px;
         padding: 1rem;
         z-index: 50;
+
+        @media (max-width: 600px) {
+          display: flex;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
       `;
     }
   }}
@@ -44,8 +64,12 @@ export const CardText = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-  min-width: 300px;
+  min-width: 20vw;
   padding: 10px;
+
+  @media (max-width: 600px) {
+    display: flex;
+  }
 `;
 
 export const Buttons = styled.div`
@@ -81,4 +105,6 @@ export const Link = styled.a`
 export const Gif = styled.img`
   border: 1px solid #fff;
   padding: 5px;
+  width: 550px;
+  height: auto;
 `;

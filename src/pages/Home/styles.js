@@ -8,7 +8,8 @@ export const fadeIn = keyframes`
 export const Container = styled.section`
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
+  padding-top: 30vh;
 `;
 
 export const Name = styled.h1`
